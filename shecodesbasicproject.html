@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodBoard MailingList</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+        background: linear-gradient(#f5faf0, #d0e7b6);
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        color: black;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .dark-theme-button:hover {
+        color: black;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .dark-theme-button {
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        transition: all 200s ease-in-out;
+      }
+
+      .more-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3px;
+        border: 1px solid #7daf42;
+        color: white;
+        background-color: #7daf42;
+        font-size: 15px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .more-button:hover {
+        color: #7daf42;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 750px;
+        margin: 15px auto;
+        background-color: white;
+        padding: 18px;
+        border-radius: 15px;
+      }
+
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: #ec90b9;
+      }
+
+      h2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        line-height: 30px;
+        font-weight: lighter;
+        text-align: center;
+        color: #7daf42;
+      }
+
+      p {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        color: #7daf42;
+      }
+
+      .grid {
+        max-width: 750px;
+        margin: 10px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: masonry;
+      }
+
+      .grid img {
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: none;
+      }
+      .grid img:hover {
+        transition: all 200ms ease-in-out;
+        box-shadow: 2px 3px #53752c;
+      }
+
+      .img-below {
+        max-width: 300px;
+        height: 217px;
+        width: 236px;
+        margin-top: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 12px 0;
+        color: #53752c;
+        font-size: 12px;
+      }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+
+      .image-1 {
+        width: 236px;
+      }
+
+      .image-2 {
+        width: 236px;
+      }
+
+      .image-4 {
+        height: 419px;
+        width: 236px;
+      }
+      hr {
+        border: 1px solid #a6be8a;
+      }
+      span {
+        color: #53752c;
+      }
+      a {
+        color: #53752c;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-theme-button">Dark Theme</button>
+    <div class="container">
+      <h1>🌷 Mood Board 🌷</h1>
+      <h2>~ pinterest inspired ~</h2>
+      <div class="grid">
+        <div>
+          <img
+            class="image-1"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/528/original/Les_essentiels_de_la_salle_de_bains.jpg?1675367352"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="image-2"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/530/original/Soft_Mint_Aesthetic.jpg?1675367462"
+            alt=""
+          />
+          <img
+            class="img-below"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/529/original/meadow.jpg?1675367391"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="image-4"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/531/original/Bloomcore.png?1675367468"
+            alt=""
+          />
+          <button class="more-button">
+            <strong>click for more...</strong>
+          </button>
+        </div>
+      </div>
+      <p>🍀 surround yourself with people who bring you good vibes 🍀</p>
+      <hr />
+      <p>
+        to be added to our <em>mailing list</em> select <br />the
+        <span>click for more</span> button
+      </p>
+    </div>
+    <footer>
+      Coded by Delilah Lawes<br /><a
+        href="https://www.linkedin.com/in/delilah-lawes-4b8b33221"
+        >linkedin</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      function contact() {
+        let name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+        let email = prompt("What is your email address?");
+
+        if (age >= 18 && age <= 25) {
+          alert(
+            "Thank you " +
+              name +
+              "! We will sent you an email with weekly moodboards 🌷"
+          );
+        } else {
+          alert(
+            "We are sorry " +
+              name +
+              "! Our moodboard mailing list is only for people ages 18-25."
+          );
+        }
+      }
+
+      let themeButton = document.querySelector(".dark-theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let learnButton = document.querySelector(".more-button");
+      learnButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
