@@ -44,6 +44,6 @@ The entire application is contained in a single HTML file, including:
 
 ## Enhanced Version
 
-An improved version of this project with modern features and better code organization can be found [here](link-to-new-repo)
+An improved version of this project with better code organization can be found [here](https://github.com/delilah-lawes/mood-board)
 
 > Note: This repository serves as an archive of the original SheCodes Basics submission. For the latest version with improved features and code structure, please visit the link above.
